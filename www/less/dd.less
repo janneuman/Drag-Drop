@@ -1,0 +1,38 @@
+.start {
+    background: #c0c0c0;
+}
+#draggable {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    background: lime;
+    text-align: center;
+
+    &.dragged {
+        background: red;
+    }
+}
+
+.dropzone {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: blueviolet;
+    margin: 10px;
+    padding: 10px;
+    border: 3px solid white;
+    
+    .dragg-active & {
+        border: 3px dotted blue;
+        opacity: 0.5;
+    }
+
+    &.drag-enter {
+        opacity: 1;
+    }
+
+    &.changed {
+        border-color: #b9b9b9;
+        background: #e2bb1d;
+    }
+}
